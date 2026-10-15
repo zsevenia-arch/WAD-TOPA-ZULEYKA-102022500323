@@ -1,0 +1,51 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul A - Kategori & Prioritas Gangguan IT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <h1>Pengelolaan Master Jenis Gangguan & Prioritas IT</h1>
+        <hr>
+
+        <h3>Form Tambah Gangguan</h3>
+        <form>
+            <label>Jenis Gangguan:</label>
+            <input type="text" placeholder="Contoh: Koneksi LAN Putus" required>
+            
+            <label>Kategori:</label>
+            <select name="kategori" required>
+                <option value="" disabled selected>Pilih Kategori Gangguan</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Software">Software</option>
+                <option value="Network">Network</option>
+            </select>
+
+            <label>Tingkat Prioritas:</label>
+            <select name="tingkat_prioritas" required>
+                <option value="" disabled selected>Pilih Tingkat Prioritas</option>
+                <option value="High">High/option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+
+            <button type="submit" name="simpan">Simpan</button>
+        </form>
+
+        <hr>
+
+        <h3>Daftar Master Gangguan & Tingkat Prioritas</h3>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Jenis Gangguan</th>
+                <th>Kategori</th>
+                <th>Tingkat Prioritas</th>
+            </tr>
+        </table> 
+    </div>      
+</body>
+</html>
